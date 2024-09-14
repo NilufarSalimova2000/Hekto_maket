@@ -199,8 +199,9 @@ const generateLink = (...arr) => {
 
 generateLink("New Arrival", "Best Seller", "Featured", "Special Offer");
 
+
 $(".slider").slick({
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
@@ -220,4 +221,11 @@ $(".slider").slick({
       },
     },
   ],
+});
+
+
+const change_theme = document.querySelector(".change_theme");
+
+change_theme.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
 });

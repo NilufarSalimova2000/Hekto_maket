@@ -18,6 +18,10 @@ module.exports = {
         subTextColor: "var(--sub-text-color)",
         pageButtonColor: "var(--page-button-color)",
         pink: "var(--pink)",
+        nav: "var(--nav)",
+        dark: "var(--dark)",
+        slide: "var(--slide)",
+        title: "var(--title)"
       },
       container: {
         center: true,

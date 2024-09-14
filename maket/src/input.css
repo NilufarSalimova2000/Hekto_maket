@@ -17,12 +17,20 @@
 	--sub-text-color: #8a8fb9;
 	--page-button-color: #e0d3f5;
 	--pink: #fb2e86;
+  --nav: #0d0e43;
+  --dark: #000;
+  --slide: #f2f0ff;
+  --title: #1a0b5b;
   }
   
   .dark {
-    --primary: #b5ba1f;
-    --secondary: #fcfcfc;
-    --white-bg: #0a0a0a;
+    --white: #0a0a0a;
+    --nav: #eeeffb;
+    --violet: #0a0a0a;
+    --dark: #fff;
+    --slide: #7e33e0;
+    --title: #eeeffb;
+    --text: #eeeffb;
   }
 
   .slick-track {
@@ -52,8 +60,8 @@
   
   .slick-arrow {
     font-size: 0;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: var(--accent);
     border-radius: 50%;
     z-index: 10000;
@@ -62,15 +70,15 @@
   .slick-next {
     position: absolute;
     right: 20px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
   }
   
   .slick-prev {
     position: absolute;
     z-index: 10000;
-    left: 20px;
-    top: 50%;
+    left: 0;
+    top: 45%;
     transform: translateY(-50%);
   
   }
@@ -78,22 +86,23 @@
   .slick-dots {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     gap: 15px;
+    
   }
   
   .slick-dots button {
     font-size: 0;
     width: 10px;
     height: 10px;
-    background-color: #5656f4;
-    border-radius: 50%;
+    background-color: transparent;
     display: block;
+    border: 1px solid var(--accent);
+    transform: rotate(45deg);
   }
   
   .slick-dots .slick-active button {
-    background-color: red
+    background-color: var(--accent);
   }
